@@ -354,7 +354,6 @@ input:checked + div span.date { font-family: "LatoLatinWebSemibold", sans-serif;
 header, article { width: 980px; margin: 2em auto 0; }
 footer { width: 100%; background: #999; float: left; text-align: center; padding: 3em 0; clear: both; }
 footer figure { display: inline-block; clear: left; }
-footer figure:first-child { margin: 0 11em 0 0; }
 
 @media screen and (max-device-width: 1279px) and (-webkit-min-device-pixel-ratio: 1) {
 
