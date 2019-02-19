@@ -265,11 +265,8 @@ ul p {
 }
 
 .content {
-  max-height: 20px;
-  padding: 50px 20px 0;
-  border-color: transparent;
-  border-width: 8px;
-  border-style: solid;
+  padding: 3em 1.25em 0;
+  border: 0.5em solid transparent;
   border-radius: 0.5em;
   position: relative;
 }
@@ -304,8 +301,7 @@ ul p {
 
 a { color: #d12028; }
 a:hover, a:active { text-decoration: none; }
-.content p span { max-width: 600px; margin-top: 1em; float: left; }
-.content p img { float: right; }
+.content p img { display: block; margin: 1em 0 0; clear: both; }
 
 label {
   font-size: 1.3em;
@@ -351,20 +347,6 @@ input:checked ~ .content p {
 
 input:checked + div span.date { font-family: "LatoLatinWebSemibold", sans-serif; }
 
-header, article { width: 980px; margin: 2em auto 0; }
+header, article { width: 60%; margin: 2em auto 0; padding: 0 3em 0 9em; }
 footer { width: 100%; background: #999; float: left; text-align: center; padding: 3em 0; clear: both; }
 footer figure { display: inline-block; clear: left; }
-
-@media screen and (max-device-width: 1279px) and (-webkit-min-device-pixel-ratio: 1) {
-
-    body { font-size: 75%; }
-    header, article { width: auto; margin: 2em; }
-    .date { left: -130px; }
-    .content p span { max-width: 220px; }
-    input:checked + .relative label { max-width: 270px; }
-    article { margin-left: 10em; }
-    footer figure,
-    footer figure:first-child { margin: 0; }
-    footer figure img { max-width: 75%; }
-    
-}
