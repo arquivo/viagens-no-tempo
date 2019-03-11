@@ -215,62 +215,58 @@
 }
 
 body {
-  max-width: 980px;
-  margin: 2em auto;
-  padding: 0 5%;
   font-size: 100%;
+  margin: 0;
+  padding: 0;
   font-family: "LatoLatinWeb", sans-serif;
   color: #333;
   background: #fff;
 }
 
-h1, p { margin: 0; }
-h1 { font-size: 2.5em; }
-h1 span { color: #fff; background: #d12028; padding: 0.1em 0.25em 0; border-radius: 0.15em; }
+h1 { font-size: calc(1.5em + 0.5vw); margin: 0; }
+h1 span { display: inline-block; color: #fff; background: #e32127; padding: 0.1em 0.25em 0; border-radius: 0.15em; }
+header p { margin: 0.5em 0; font-size: calc(0.65em + 0.25vw); }
 
-#timeline {
+ul {
   list-style: none;
-  margin: 50px 0 30px 120px;
+  margin: 3em 0;
   padding-left: 30px;
-  border-left: 8px solid #ccc;
+  border-left: 8px solid #ddd;
 }
-#timeline li {
+ul li {
   margin: 1em 0;
   position: relative;
 }
-#timeline p {
-  margin: 0 0 15px;
+ul p {
+  margin: 0 0 1em;
 }
 
 .date {
-  margin-top: -10px;
+  margin-top: -14px;
   top: 50%;
-  left: -158px;
-  font-size: 2.5em;
-  line-height: 20px;
+  left: -5em;
+  font-size: calc(1.25em + 0.5vw);
+  line-height: 100%;
   position: absolute;
   font-family: "LatoLatinWebLight", sans-serif;
 }
 
 .circle {
-  margin-top: -10px;
+  margin-top: -15px;
   top: 50%;
-  left: -44px;
+  left: -46px;
   width: 10px;
   height: 10px;
   background: #fff;
-  border: 5px solid #ccc;
+  border: 7px solid #ddd;
   border-radius: 50%;
   display: block;
   position: absolute;
 }
 
 .content {
-  max-height: 20px;
-  padding: 50px 20px 0;
-  border-color: transparent;
-  border-width: 2px;
-  border-style: solid;
+  padding: 3em 1.25em 0;
+  border: 0.5em solid transparent;
   border-radius: 0.5em;
   position: relative;
 }
@@ -285,9 +281,9 @@ h1 span { color: #fff; background: #d12028; padding: 0.1em 0.25em 0; border-radi
 }
 .content:before {
   border-right-color: inherit;
-  border-width: 20px;
+  border-width: 28px;
   top: 50%;
-  margin-top: -20px;
+  margin-top: -28px;
 }
 .content:after {
   border-right-color: #fff;
@@ -303,41 +299,59 @@ h1 span { color: #fff; background: #d12028; padding: 0.1em 0.25em 0; border-radi
   overflow: hidden;
 }
 
-.content p a { color: #d12028; }
-.content p a:hover, .content p a:active { text-decoration: none; }
+a { color: #e32127; }
+a:hover, a:active { text-decoration: none; }
+.content p { font-size: calc(0.75em + 0.25vw); }
+.content p img { display: block; width: calc(12% + 0.65vw); margin: 1em 0 0; clear: both; }
 
 label {
-  font-size: 1.3em;
+  font-size: calc(0.6em + 0.75vw);
+  line-height: calc(90% + 0.5vw);
   position: absolute;
   z-index: 100;
   cursor: pointer;
-  top: 20px;
-  transition: transform 0.1s linear;
-  color: #d12028;
+  top: 25px;
+  left: 6px;
+  transition: transform .1s linear, color .1s ease-in-out;
+  color: #e32127;
   font-family: "LatoLatinWebHeavy", sans-serif;
 }
 
-.radio {
+label:hover,
+label:active,
+input:checked + .relative label { color: #333; }
+
+input {
   display: none;
 }
 
-.radio:checked + .relative label {
+input:checked + .relative label {
   cursor: auto;
   transform: translateX(42px);
+  margin-right: 5em;
 }
-.radio:checked + .relative .circle {
-  background: #d12028;
+
+input:checked + .relative .circle {
+  background: #e32127;
 }
-.radio:checked ~ .content {
+
+input:checked ~ .content {
   max-height: 180px;
   border-color: #ddd;
   margin-right: 20px;
   transform: translateX(20px);
-  transition: max-height 0.1s linear, border-color 0.1s linear, transform 0.1s linear;
+  transition: max-height 0.1s linear, border-color .1s linear, transform .1s linear;
 }
-.radio:checked ~ .content p {
+
+input:checked ~ .content p {
   max-height: 200px;
+  margin: 2em 0 1em;
   color: #333;
 }
 
-.radio:checked + div span.date { font-family: "LatoLatinWebSemibold", sans-serif; }
+input:checked + div span.date { font-family: "LatoLatinWebSemibold", sans-serif; }
+
+header, article { width: 60%; margin: calc(2em - 1vh) auto 0; padding: 0 3em 0 6em; }
+footer { width: 100%; background: #000; float: left; text-align: center; padding: calc(1em + 0.25vw) 0; clear: both; }
+footer figure { display: inline-block; clear: left; }
+footer figure img { height: calc(10px + 3vw); }
