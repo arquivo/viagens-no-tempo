@@ -389,7 +389,7 @@ body > article > ul > li:nth-child(1){
     margin: 3em 0 1em;
   }
   body > article > ul > li:nth-child(2) > div.content > p{
-    margin: 1em 0 1em;
+    margin: 2em 0 1em;
   }  
   body > article > ul > li:nth-child(3) > div.content > p{
     margin: 3em 0 1em;
@@ -447,7 +447,7 @@ body > article > ul > li:nth-child(1){
   }
 
   body > article > ul > li:nth-child(2) > div.relative > label{
-    padding-top: 10px;
+    padding-top: 11px;
   }
   body > article > ul > li:nth-child(3) > div.relative > label{
     padding-top: 20px;
