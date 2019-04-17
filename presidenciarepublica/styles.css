@@ -355,10 +355,6 @@ input:checked + div span.date { font-family: "LatoLatinWebSemibold", sans-serif;
 
 header, article { width: 60%; margin: calc(2em - 1vh) auto 0; padding: 0 3em 0 6em; }
 
-body > article > ul > li:nth-child(1){
-  display: none;
-}
-
 @media screen and (max-width: 992px) {
   header {
     width: 84%;  
