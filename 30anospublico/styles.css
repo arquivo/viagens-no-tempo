@@ -264,6 +264,10 @@ ul p {
   position: absolute;
 }
 
+a:hover .date {
+	outline: 2px solid red;
+	}
+
 .content {
   padding: 3em 1.25em 0;
   border: 0.5em solid transparent;
@@ -505,4 +509,4 @@ header, article { width: 60%; margin: calc(2em - 1vh) auto 0; padding: 0 3em 0 6
 
 footer { width: 100%; background: #000; float: left; text-align: center; padding: calc(1em + 0.25vw) 0; clear: both; }
 footer figure { display: inline-block; clear: left; }
-footer figure img { height: 100px; }
+footer figure img { height: 44px; }
