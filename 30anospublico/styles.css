@@ -304,7 +304,7 @@ a:hover .date {
 }
 
 a { color: #d10019; text-decoration:none }
-a:hover, a:active { text-decoration: none;color:#af1124 }
+a:hover, a:active { text-decoration: none;color:#333;}
 .content p { font-size: calc(0.75em + 0.25vw); }
 .content p img { display: block; width: calc(12% + 0.65vw); margin: 1em 0 0; clear: both; }
 
