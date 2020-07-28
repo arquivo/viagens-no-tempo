@@ -180,10 +180,10 @@ a {
 
             function search() {
             	var arquivo_endpoint = "https://arquivo.pt/search.jsp?";
-            	var collections = "collection:EAWP23";
+            	var dates = "&dateStart=22/05/2019&dateEnd=17/07/2019";
             	var textToSearch = document.getElementById("searchCriteria").value;
             	console.log(textToSearch);
-            	window.location.href = arquivo_endpoint + "l=" + currentLanguage + "&query=" + textToSearch + " " + collections;
+            	window.location.href = arquivo_endpoint + "l=" + currentLanguage + "&query=" + textToSearch + dates;
             }
             
 			var input = document.getElementById("searchCriteria");
