@@ -65,7 +65,7 @@ footer figure img {
 }
 .timeline::before {
   content: '';
-  background: #C5CAE9;
+  background: #909090;
   width: 5px;
   height: 95%;
   position: absolute;
@@ -125,7 +125,7 @@ footer figure img {
 .timeline-img {
   width: 30px;
   height: 30px;
-  background: #3F51B5;
+  background: #000000;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -134,7 +134,7 @@ footer figure img {
 }
 
 a {
-  background: #3F51B5;
+  background: #000000;
   color: #FFFFFF;
   padding: 8px 20px;
   text-transform: uppercase;
@@ -188,7 +188,7 @@ blockquote {
 }
 
 .date {
-  background: #FF4081;
+  background: #000000;
   display: inline-block;
   color: #FFFFFF;
   padding: 10px;
