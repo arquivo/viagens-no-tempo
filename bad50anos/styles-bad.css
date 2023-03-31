@@ -313,7 +313,7 @@ label {
   top: 25px;
   left: 6px;
   transition: transform .1s linear, color .1s ease-in-out;
-  color: #e21e1d;
+  color: #444343;
   font-family: "LatoLatinWebHeavy", sans-serif;
 }
 
