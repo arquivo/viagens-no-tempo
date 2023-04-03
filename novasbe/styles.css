@@ -302,7 +302,7 @@ ul p {
 a { color: #000000; }
 a:hover, a:active { text-decoration: none; }
 .content p { font-size: calc(0.75em + 0.25vw); }
-.content p img { display: block; width: calc(12% + 0.65vw); margin: 1em 0 0; clear: both; }
+.content p img { display: block; width: auto; margin: 1em 0 0; clear: both; }
 
 label {
   font-size: calc(0.8em + 0.75vw);
@@ -337,7 +337,7 @@ input:checked + .relative .circle {
 }
 
 input:checked ~ .content {
-  max-height: 180px;
+  max-height: 380px;
   border-color: #ddd;
   margin-right: 20px;
   transform: translateX(20px);
