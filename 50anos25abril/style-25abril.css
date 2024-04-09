@@ -224,3 +224,14 @@ blockquote {
     border-color: transparent #f5f5f5 transparent transparent;
   }
 }
+
+
+.banner-image {
+  background-image: url("images/50anos25abril-arquivopt-banner.jpg");
+  background-color: #9b0204;
+  width: 1180px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
