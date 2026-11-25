@@ -39,6 +39,7 @@ Current microsites include:
 | `presidentes` | Presidentes da República |
 | `radiocomercial` | Rádio Comercial: 40 anos |
 | `resawdev` | Resawdev |
+| `sapoblogs` | Sapo Blogs |
 
 There is no build step or dependency manager — pages are plain HTML/CSS/JS served as-is.
 
